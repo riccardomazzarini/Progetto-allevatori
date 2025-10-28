@@ -24,6 +24,13 @@ function am_allevatore_dashboard() {
         exit;
     }
 
+    // Se la richiesta ha sezione=modifica-puledro carico direttamente il template di modifica/creazione
+    $slug = isset($_GET['sezione']) ? sanitize_text_field($_GET['sezione']) : '';
+    if ($slug === 'modifica-puledro') {
+        ob_start();
+        include AM_PLUGIN_DIR . 'includes/dashboard/modifica-puledro.php';
+        return ob_get_clean();
+    }
 
     ob_start(); ?>
     <div class="am-dashboard">
