@@ -1,0 +1,120 @@
+/* ================================
+   Pagina Puledri — Tabella pubblica
+   Stile coerente con template-allevatore.css
+=================================== */
+
+.am-pagina-puledri {
+  font-family: "Inter", sans-serif;
+  color: #222;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Titolo */
+.am-pagina-puledri h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #c00;
+  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Tabella */
+.am-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.am-table th,
+.am-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+.am-table th {
+  background: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+}
+.am-table tr:hover {
+  background: #fafafa;
+}
+
+/* Pulsante */
+.am-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: #c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.am-btn:hover {
+  background: #900;
+}
+
+/* Stato disponibilità */
+.am-status--ok {
+  color: green;
+  font-weight: bold;
+}
+.am-status--no {
+  color: red;
+  font-weight: bold;
+}
+.am-status--other {
+  color: #555;
+}
+
+/* Nota finale */
+.am-list-warning {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+}
+
+.am-filtro-container {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.am-filtro-container select,
+.am-filtro-container input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.am-filtro-container button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.am-filtro-container button:hover {
+  background-color: #000;
+}
